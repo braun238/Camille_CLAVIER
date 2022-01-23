@@ -1,0 +1,564 @@
+@font-face{
+    font-family:'Arcane Nine';
+    src:url('../FONTS/arcane_nine/Arcane Nine.otf');
+}
+
+@font-face{
+    font-family:'Louis George Cafe';
+    src:url('../FONTS/louis_george_caf/Louis\ George\ Cafe.ttf');
+}
+
+
+@font-face{
+    font-family:'Cocogoose';
+    src:url('../FONTS/cocogoose/Cocogoose\ Pro-trial.ttf');
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#84ba8d;
+    color:#ffe7d4;
+    font-family:Louis George Cafe;
+    font-size:1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* Main*/
+
+#langage{
+    width: 100%;
+    height: 2em;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flag{
+    width: 35px;
+    height: 35px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+header{
+    margin-top:2em;
+    margin-bottom: 1em;
+    width:100%;
+    height:5em;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+h1{
+    font-family:Cocogoose;
+    color:#f4d35e;
+    font-size: 3em;
+    margin-left: 1em;
+}
+
+#liste_menu_d{
+    visibility: hidden;
+    background-color: RGB(101,123,139,0.75);
+    border-radius: 5px;
+    padding:30px;
+    width: 25%;
+    height: 15em;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#liste_menu_d.active{
+    animation: deployer 1s;
+    visibility: visible;
+}
+
+@keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+a{
+    color: #ffe7d4;
+    text-decoration: none;
+}
+
+
+#presentation{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#bloc_a_propos{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2{
+    font-family:Arcane Nine;
+}
+
+#texte_de_presentation{
+    background-color:#f4d35e;
+    border-radius:40px;
+    color:#657b8b;
+    padding:2em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    margin-right: 2em;
+}
+#photo_camille{
+    border-radius:100%;
+    width:auto;
+    height: 400px;
+    margin: 2em;
+}
+
+#bubbles{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bubble{
+    background-color:RGB(101,123,139,0.75);
+    color:#ffe7d4;
+    border:none;
+    margin:2px;
+    font-size:1.2em;
+    font-family:Louis George Cafe;
+    cursor:pointer;
+    width:150px;
+    height:150px;
+    border-radius:50%;
+}
+
+.icon{
+    width:3em;
+    margin:0.5em;
+    cursor:pointer;
+}
+
+h3{
+    font-family:Arcane Nine;
+    color:#f4d35e;
+    font-size: 2.5em;
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+#circular_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#loisirs{
+    visibility:hidden;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#loisirs.active{
+    visibility:visible;
+    -webkit-animation: fadein 0.5s;
+            animation: fadein 0.5s;
+}
+
+#enseignements{
+    width:100%;
+    height:40em;
+    top:0;
+    left:0;
+    background-color: #569462;
+    display: flex;
+    flex-direction: column;
+}
+
+#experience{
+    width:100%;
+    height:90em;
+    top:0;
+    left:0;
+    background-color:#84ba8d;
+    display: flex;
+    flex-direction: column;
+}
+
+#diplomes{
+    width:100%;
+    height:20em;
+    top:0;
+    left:0;
+    background-color: #569462;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#competences{
+    width:100%;
+    height:20em;
+    top:0;
+    left:0;
+    background-color:#84ba8d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Informations personnelles*/
+
+#header_informations_personnelles{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#arrow{
+    width:3em;
+    height: 3em;
+}
+
+#informations_personnelles_block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 700px;
+}
+
+.ligne{
+    display: flex;
+    width: 80%;
+    margin: 1em;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.type{
+    width: 200px;
+}
+
+.value{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width:400px;
+    overflow: visible;
+}
+
+/* Enseignements*/
+
+#ENIB{
+    width: 40%;
+    margin:2em;
+    border-radius:20px;
+}
+
+#body_enseignement{
+    display:flex;
+    flex-direction: row;
+    align-items:flex-end;
+}
+
+#texte_body_enseignement{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Expérience*/
+
+#body_experience{
+    display:flex;
+    flex-direction: row;
+    height:90%;
+    justify-content: space-between;
+}
+
+#ligne_frise{
+    border-left:10px solid #657b8b;
+    margin-left: 1em;
+    height:95%;
+    display:inline-block;
+    border-radius: 10px;
+}
+
+#frise{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:flex-start;
+    margin-top:2em;
+}
+
+.annees{
+    display:flex;
+    height:90%;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 2em;
+    font-size:x-large;
+    font-family:Arcane Nine;
+}
+
+#body_text_experience{
+    display:flex;
+    flex-direction: column;
+    height:90%;
+    justify-content: space-around;
+}
+
+#paragraphe_experience{
+    display:flex;
+    flex-direction: column;
+}
+
+.lieu_experience{
+    margin-bottom:1em;
+}
+
+#liste_diplomes{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    height:10em;
+    justify-content: space-around;
+    list-style:none;
+    align-items: center;
+}
+.element_diplome{
+    color:#657b8b;
+    background-color: #f4d35e;
+    margin-top: 2em;
+    padding: 2em;
+    border-radius:50px;
+}
+
+/* Competences*/
+
+.block_competence{
+    width:60%;
+    height:75%;
+    background-color: RGB(101,123,139,0.75) ;
+    list-style: inside;
+    border-radius:50px;
+    padding:2em;
+    margin:3em;
+}
+
+.liste_competences{
+    margin:2em;
+}
+
+/* Langues Parlées */
+
+#barres{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left:2em;
+    margin-top:2em;
+}
+
+.barre{
+    width:80%;
+    margin: 2em;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.back_barre{ 
+    width: 300px;
+    height: 24px;
+    padding: 4px;
+    background-color: #ffe7d4;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+}
+
+.progression{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 200px;
+        height: 24px;
+        background: RGB(101,123,139);
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+    
+}
+
+@keyframes entrance_fr{
+    from{
+        width:0px;
+    }
+    to{
+        width:300px;
+    }
+}
+
+@keyframes entrance_ang{
+    from{
+        width:0px;
+    }
+    to{
+        width:240px;
+    }
+}
+
+@keyframes entrance_esp{
+    from{
+        width:0px;
+    }
+    to{
+        width:210px;
+    }
+}
+
+@keyframes entrance_pt{
+    from{
+        width:0px;
+    }
+    to{
+        width:120px;
+    }
+}
+
+@keyframes entrance_jp{
+    from{
+        width:0px;
+    }
+    to{
+        width:60px;
+    }
+}
+
+#francais{
+    animation: entrance_fr 2s;
+    width: 300px;
+}
+
+#anglais{
+    animation: entrance_ang 2.5s;
+    width:240px;
+}
+
+#espagnol{
+    animation: entrance_esp 1.80s;
+    width:210px;
+}
+
+#portugais{
+    width:120px;
+    animation: entrance_pt 1.5s;
+}
+
+#japonais{
+    width:60px;
+    animation: entrance_jp 1s;
+}
+
+/* Lancer de marteau */
+#ldm_camille{
+    margin:2em;
+    width:40%;
+    border-radius: 60px;
+}
+
+#texte_ldm{
+    margin:2em;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+#texte_IHH{
+    margin:2em;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Couture*/
+
+#file_ihh{
+    text-decoration: underline;
+}
+
+/* Voyages*/
+
+.flag_pays{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin:3em;
+}
+
+.ligne_pays{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#voyages{
+    height:10em;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.flag_p{
+    height:125px;
+    width:125px;
+}
+
+@keyframes deployer{
+    from{
+        width:0%;
+    }
+    to{
+        width:25%;
+    }
+}
+
+@keyframes fermer{
+    from{
+        width:25%;
+    }
+    to{
+        width:0%;
+        visibility: hidden;
+    }
+}
