@@ -1,0 +1,187 @@
+@font-face {
+    font-family: Starborn;
+    src: url("../FONTS/starborn/Starborn.ttf");
+}
+
+@font-face {
+    font-family: CandyBeans;
+    src: url("../FONTS/candy_beans/Candy\ Beans.otf");
+}
+
+@font-face {
+    font-family: LouisGeorgeCafe;
+    src: url("../FONTS/louis_george_caf/Louis\ George\ Cafe.ttf");
+}
+
+body{
+    background-color: white;
+    color:white;
+    display: flex;
+    justify-content: center;
+    font-family: LouisGeorgeCafe;
+}
+
+.ProjetIHHSecondeVie{
+    width:70%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    width:100%;
+    height:10em;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width:100%;
+}
+
+h1:hover{
+    color:#e03f4e;
+}
+
+#logo{
+    height:100%;
+}
+
+.page{
+    background-color:#ffc9e6;
+    text-decoration: none;
+    padding:0.5em;
+    width:100%;
+    font-family: CandyBeans;
+    width:12.2em;
+}
+
+.page:hover{
+    background-color:#e03f4e;
+    border-color: #ffc9e6;
+    border-style: dashed;
+    box-sizing: border-box;
+    font-size: large;
+    border-width: 0.1em;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    color:#ffc9e6;
+    font-family: Starborn;
+    font-size: 2em;
+}
+
+#presentation{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top:4em;
+}
+
+.texte{
+    background-color: #e03f4e;
+    width:100%;
+    border-style: dashed;
+    border-color: #ffc9e6;
+    border-width: 0.2em;
+    box-sizing: border-box;
+    padding:1em;
+    font-size: large;
+    border-radius: 2em;
+}
+
+footer{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2em;
+    width:100%;
+    color:grey
+}
+
+.contact{
+    color:grey
+}
+
+#NousContacter{
+    font-family: Starborn;
+    color: #ffc9e6;
+}
+
+#Qui{
+    margin-top:4em;
+}
+
+#site_IHH{
+    text-decoration: underline;
+}
+
+#Creations{
+    width:100%;
+    margin-top:4em;
+}
+
+.line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+}
+
+#mosaique{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    height:50em;
+}
+
+.image{
+    width:250px;
+    height:250px;
+    background-color:#e03f4e;
+    border-color: #ffc9e6;
+    border-style: dashed;
+    box-sizing: border-box;
+    border-width: 0.2em;
+}
+
+ul{
+    list-style-image : url(../IMAGES/heart.png);
+}
+
+li{
+    font-size:1em;
+}
+
+h2{
+    font-size:xx-large;
+    color:#e03f4e;
+}
+
+.paragraphe{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mini{
+    width:25%;
+    height:25%;
+    margin:1em;
+}
