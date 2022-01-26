@@ -22,3 +22,26 @@ circular_toggle.addEventListener('click',function(){
         loisirs.classList.add("active");
     }
 })
+
+//utilisation de intersection observer
+let ratio=.4;
+let options = {
+    root: null, // le texte est dans l'écran
+    rootMargin: '0px',
+    threshold: ratio //Combien de pourcent visible pour lancer l'animation ?
+  }
+
+
+let if_intersect = function(experiences_show,observer) {
+    experiences_show.forEach(function(experience_show){
+        if(experience_show.intersectionRatio>ratio){
+            experience_show.target.classList.add("appear");
+            observer.unobserve(experience_show.target);
+        }
+    })
+}
+  
+let observer = new IntersectionObserver(if_intersect /*fonction quand l'élément est visible*/, options);
+document.querySelectorAll(".reveal").forEach(function(revealing){
+    observer.observe(revealing);
+})

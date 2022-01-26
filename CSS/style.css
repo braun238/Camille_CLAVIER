@@ -562,3 +562,12 @@ h3{
         visibility: hidden;
     }
 }
+
+.reveal{
+    opacity:0;
+}
+
+.reveal.appear{
+    opacity:1;
+    transition-duration: 3s ;
+}
