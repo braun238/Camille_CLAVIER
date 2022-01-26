@@ -24,7 +24,7 @@ circular_toggle.addEventListener('click',function(){
 })
 
 //utilisation de intersection observer
-let ratio=.4;
+let ratio=0.1;
 let options = {
     root: null, // le texte est dans l'écran
     rootMargin: '0px',
