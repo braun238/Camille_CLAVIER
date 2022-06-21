@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Quizz JS</title>
+
+        <meta charset="utf-8"/>
+
+        <link rel="stylesheet" href="style.css" />
+
+    </head>
+
+    <body onload="readQuestions()">
+        <div id="window">
+            <div id="img"></div>
+            <div id="bodyQuestion">
+                <div id="question">Quelle est ma question ?</div>
+                <ul id="answer" class="passiveAnswer">
+                    <li id="answer1" class="" onclick="changeAnswer('answer1')">Réponse 1</li>
+                    <li id="answer2" class="" onclick="changeAnswer('answer2')">Réponse 2</li>
+                    <li id="answer3" class="" onclick="changeAnswer('answer3')">Réponse 3</li>
+                    <li id="answer4" class="" onclick="changeAnswer('answer4')">Réponse 4</li>
+                    <li id="answer5" class="" onclick="changeAnswer('answer5')">Réponse 5</li>
+                </ul>
+            </div>
+            <div id="confirm" onclick="checkAnswers(0)">Valider</div>
+        </div>
+        <div id="scoreScreen">
+            <div id="squareElementScore">
+                <div id="textScoreScreen"></div>
+                <div id="returnButton"><img src="ICONS/reload.svg" onclick="reload()"></div>
+            </div>
+        </div>
+    </body>
+
+    <script src="app.js"></script>
+    <script type="text/javascript" src="questions.json"></script>
+</html>

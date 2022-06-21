@@ -1,0 +1,103 @@
+@font-face{
+    font-family:'FTN55';
+    src:url('FONT/FTN55.otf');
+}
+
+html { 
+    overflow-y: hidden;
+    overflow-x: hidden; } 
+
+html,body{
+    height:100%;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#question{
+    font-size: x-large;
+}
+
+#window{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FCC600;
+    width: 100%;
+    height:100%;
+    font-family: FTN55;
+    font-size:large;
+}
+
+#confirm{
+    position:relative;
+    background-color: #00A993;
+    border-radius: 2em;
+    color:white;
+    padding:1em;
+    margin:2em;
+    bottom:0%;
+}
+#confirm:hover{
+    background-color: #008b79;
+}
+
+.passiveAnswer{
+    list-style: url("../QUIIZ_MOCHA/ICONS/checkboxPassive.svg");
+}
+
+.activeAnswer{
+    list-style: url("../QUIIZ_MOCHA/ICONS/checkboxActive.svg");
+}
+
+li{
+    margin-bottom: 20px;
+}
+
+#scoreScreen{
+    position:absolute;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top:0px;
+    background-color:#ED805C;
+    width:100%;
+    height: 100%;
+    visibility: hidden;
+}
+
+#squareElementScore{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height:30%;
+}
+
+#img{
+    background-color: #ED805C;
+    height:100%;
+    width:100%;
+    margin:1em;
+    background-image:none;
+    background: no-repeat center;
+    background-size: auto 100%;
+}
+
+#textScoreScreen{
+    font-family: FTN55;
+    font-size: x-large;
+    padding : 2em;
+}
+
+#bodyQuestion{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2em;
+    height:100%;
+}
